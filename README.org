@@ -1,0 +1,12 @@
+#+TITLE: Alpine Clang
+#+AUTHOR: RJ Sheperd
+
+Need a simple Docker container with CMake, Clang, and LibC? Here ya
+go! 🍺
+
+#+BEGIN_SRC
+FROM alpine:latest
+RUN apk --no-cache add cmake clang clang-dev make gcc g++ libc-dev linux-headers
+#+END_SRC
+
+
